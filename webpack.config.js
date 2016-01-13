@@ -1,5 +1,5 @@
 module.exports = {
-  entry: getEntrySources(['./src/entry.js']),
+  entry: getEntrySources(['./src/js/App.js']),
   output: {
     publicPath: 'http://localhost:8080/',
     filename: 'build/bundle.js'

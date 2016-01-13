@@ -1,7 +1,7 @@
 {
-  "name": "react-app",
+  "name": "todo-app-with-fluxxor",
   "version": "1.0.0",
-  "description": "A basic environment for ReactJS in ES6, Flux Architecture and Webpack",
+  "description": "Todo App using Fluxxor",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,6 +10,8 @@
     "start": "npm run webpack-server & npm run web-server"
   },
   "keywords": [
+    "todo app",
+    "fluxxor",
     "react"
   ],
   "author": "huy-tran",
@@ -39,7 +41,6 @@
   "dependencies": {
     "react": "^0.14.3",
     "react-dom": "^0.14.0",
-    "react-router-component": "^0.29.0",
-    "flux": "^2.1.1"
+    "fluxxor": "^1.7.3"
   }
 }

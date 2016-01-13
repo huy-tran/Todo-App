@@ -1,14 +1,10 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var Fluxxor = require('fluxxor');
+var AppStores = require('./stores/AppStores');
+var AppActions = require('./actions/AppActions');
+var Main = require('./ui/Main');
 
-var App = React.createClass({
-  render: function(){
-    return (
-      <h1>Hello React</h1>
-    );
-  }
-});
+var flux = new Fluxxor.Flux(AppStores, AppActions);
 
-ReactDOM.render(<App />, document.getElementById('myApp'));
-
-module.exports = App;
+ReactDOM.render(<Main flux={flux} />, document.getElementById('myApp'));
